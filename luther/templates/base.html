@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" charset="iso-8859-1">
+   <title>{% block title %}{% endblock %}</title>
+   <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/luther.css"/>
+</head>
+<body>
+<div class="header">
+
+<img id="head" src="{{STATIC_URL}}images/Martin_Luther_by_Lucas_Cranach_der_Ältere.jpeg"
+        width="68.018" height="99.4"/>
+        <h1>Martin Luther Funeral Sermon</h1>
+        <h2>Facsimile and English Translation of the First Edition <br/>of Johann Bugenhagen's Funeral</h2>
+
+<p class="links" id="nav">
+<a href={% url "overview" %}">Overview</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="{% url "preface" %}">Preface</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="{% url "intro" %}">Introduction</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="{% url "text" %}">Text</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="{% url "images" %}">Images</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+  <a href="{% url "works" %}">Works</a>
+</p>
+
+</div>
+
+{% block content %}
+{% endblock %}
+
+
+<div class="footer">
+<center>
+  
+<p class="links" id="res-foot">
+<a href="http://www.emory.edu/CANDLER/">Candler School of Theology</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="http://www.pitts.emory.edu">Pitts Theology Library</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="http://beck.library.emory.edu/">Beck Center</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="http://www.emory.edu/libraries.cfm">University Libraries</a>
+<img src="{{STATIC_URL}}images/star-trans.gif" width="10" height="10" alt="*">
+<a href="http://www.emory.edu/">Emory University</a>
+</p>
+  <p class="links">
+  <a href="http://www.tei-c.org/"><img src="http://www.tei-c.org/About/Badges/powered-by-TEI.png" alt=
+</center>
+</div>
+</body>
+</html>

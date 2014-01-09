@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+  <titleStmt>
+    <title></title>
+  </titleStmt>
+  <editionStmt>
+   <edition>Electronic edition</edition>
+   <respStmt>
+     <resp>XML encoding by </resp>
+     <name>Sara Palmer</name> 
+     <name>Lewis H. Beck Center, Woodruff Library, Emory University</name>
+   </respStmt>
+  </editionStmt>
+  <publicationStmt>
+    <ab></ab>
+  </publicationStmt>
+  <sourceDesc>
+    <ab></ab>
+  </sourceDesc>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<div type="content">
+<head>Facsimile and English translation of the first edition of Johann Bugenhagen's funeral sermon for Martin Luther</head>
+<p>The Richard C. Kessler Reformation Collection is a repository of documents produced in connection with the Protestant Reformation in Germany. The collection now contains more than 1,700 pieces written by Martin Luther, his colleagues, and opponents and printed during their lifetimes. Each October the Kessler Collection of the Pitts Theology Library and the Candler School of Theology sponsor a rare book exhibit and concert program to celebrate the musical holdings of the Kessler Collection and the achievements of the early Protestant reformers. It is in connection with the 1996 exhibit and concert and the commemoration of the 450th anniversary of Martin Luther's death that the first edition of Johann Bugenhagen's funeral sermon for Martin Luther is reproduced in facsimile, with the introduction and English translation of Prof. Kurt K. Hendel.</p>
+</div>
+</body>
+</text>
+</TEI>

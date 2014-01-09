@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<editionStmt>
+ <edition>Electronic edition</edition>
+ <respStmt>
+   <resp>XML encoding by </resp>
+   <name>Sara Palmer</name> for the
+   <name>Lewis H. Beck Center, Woodruff Library, Emory University</name>
+ </respStmt>
+</editionStmt>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<title>BIBLIOGRAPHY</title>
+<div>
+<head>Other Publications Related to the Richard C. Kessler Reformation Collection</head>
+
+<p><bibl>Stephen A. Crist, Enchiridion Geistliker Leder unde Psalmen, Magdeburg 1536 (Emory Texts and Studies in Ecclesial Life 2; Atlanta: Scholars Press, 1994).</bibl></p>
+
+<p><bibl>Robin A. Leaver, Elisabeth Creutziger, the Magdeburg Enchiridion (1536), and Reformation Theology (Occasional Publications of the Pitts Theology Library; Atlanta: Pitts Theology Library, 1995).</bibl></p>
+
+<p><bibl>Robert L. Marshall, Luther, Bach, and the Early Reformation Chorale (Occasional Publications of the Pitts Theology Library; Atlanta: Pitts Theology Library, 1995).*</bibl></p>
+</div>
+<div>
+<p>*Requests for complimentary copies may be addressed to:
+	<ab><address><addrLine>Dr. M. Patrick Graham</addrLine>
+	<addrLine>Pitts Theology Library.</addrLine>
+	<addrLine>Emory University</addrLine>
+	<addrLine>Atlanta, Georgia 30322</addrLine></address></ab>
+</p>
+</div>
+<div>
+<p>Although Bugenhagen's funeral sermon for Luther was not issued with a portrait of the reformer, other publications marking Luther's death that year were. The medallion reproduced on the top cover of the present work is taken from the verso of the title page of 
+Vom Christlichen abschied aus diesem todlichen leben des Ehrwirdigen Herrn D. Martini Lutheri, bericht, durch D˜ Justum Jonam, M. Michaelem Celium, vnd ander die dabey gewesen, kurtz zusamen gezogen, published at Wittenberg by Georg Rhau (VD 16 J905).</p>
+</div>
+</body>
+</text>
+</TEI>

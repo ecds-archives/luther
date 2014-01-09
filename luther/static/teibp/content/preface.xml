@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<editionStmt>
+ <edition>Electronic edition</edition>
+ <respStmt>
+   <resp>XML encoding by </resp>
+   <name>Sara Palmer</name> for the
+   <name>Lewis H. Beck Center, Woodruff Library, Emory University</name>
+ </respStmt>
+</editionStmt>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<div>
+<head>Occasional Publications of the Pitts Theology Library</head>
+<head>Editor's Preface</head>
+
+<p>This facsimile of the first edition of Johann Bugenhagen's funeral sermon for Martin Luther reproduces the copy acquired for the <ref type="link" target="http://pitts.emory.edu/collections/selectholdings/kessler.cfm">Richard C. Kessler Reformation Collection</ref> in 1995 (VD 16 B9274). The introduction to the sermon and its translation into English are the work of Prof. Kurt K. Hendel, and the whole is issued as part of the activities accompanying the ninth annual Kessler Reformation Concert to commemorate the 450th anniversary of the death of Martin Luther. The concerts have been sponsored by the <ref type="link" target="http://www.emory.edu/CANDLER/">Candler School of Theology</ref> and the Richard C. Kessler Reformation Collection of the <ref type="link" target="http://www.pitts.emory.edu/">Pitts Theology Library.</ref></p>
+	<p>It is with great pride that we introduce Prof. Hendel to the supporters of the Kessler Collection and Emory University this year. He is the Christ Seminary-Seminex Professor of Reformation History at the Lutheran School of Theology at Chicago and has made the study of Bugenhagen and his contributions to the German Reformation a particular concern of his for many years. It has indeed been a pleasure over the past year to collaborate with him on the current project, and we welcome his assistance in our efforts to make the holdings of the Kessler Collection available to researchers and students of the Reformation internationally.</p>
+	<p>It is also important now to recognize the contributions of others at Emory and elsewhere to the present publication. First, thanks are due to G. Gordon Boice and the staff of University Publications (Emory) for their work on the design of this pamphlet and the program for the 1996 concert. Their creativity, close attention to detail, and energy are a constant inspiration. Second, thanks are due to Dr. Charles D. Spornick (Director, The Lewis H. Beck Center for Electronic Collections, General Libraries, Emory) for his excellent work on the electronic version of the publication (accessible at http://chaucer.library.emory.edu). Finally, I am grateful for the helpful editorial suggestions of Prof. Manfred Hoffman (Emory) and Prof. Timothy Wengert (Lutheran Theological Seminary, Philadelphia), who reviewed an earlier version of this publication. Responsibility for mistakes that remain are accepted by the editor. It is indeed an honor and pleasure to collaborate with such talented colleagues.</p>
+
+<closer>M. Patrick Graham<lb/>
+Margaret A. Pitts Associate Professor of Theological Bibliography<lb/>
+Candler School of Theology, Emory University</closer>
+</div>
+</body>
+</text>
+</TEI>
