@@ -4,10 +4,8 @@
 
 {% block content %}
 
-{% if body %}
-  {{body|safe}}
-{% else %}
-  None Found.
-{% endif %}
+  {% for key, values in thumb_dict.items %}
+    <a href={% url "page" values.1 %}><img src="{{STATIC_URL}}images/thumbs/{{values.0}}"></img></a>
+  {% endfor %}	  
 
 {% endblock %}

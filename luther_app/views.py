@@ -24,8 +24,8 @@ def overview(request):
   return render_to_response('overview.html', {'body' : body.serializeDocument()}, context_instance=RequestContext(request))
 
 def preface(request):
-  file = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'teibp', 'content', 'preface.xml'))
-  body = file.xsl_transform(filename=os.path.join(settings.BASE_DIR, 'static', 'teibp', 'content', 'teibp.xsl'))
+  file = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'xml', 'preface.xml'))
+  body = file.xsl_transform(filename=os.path.join(settings.BASE_DIR, '..', 'luther_app', 'xslt', 'luther.xsl'))
   return render_to_response('preface.html', {'body' : body.serializeDocument()}, context_instance=RequestContext(request))
 
 def intro(request):
@@ -40,9 +40,28 @@ def text(request):
   return render_to_response('text.html', {'body' : body.serializeDocument()}, context_instance=RequestContext(request))
  
 def images(request):
-  file = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'xml', 'description.xml'))
-  body = file.xsl_transform(filename=os.path.join(settings.BASE_DIR, '..', 'luther_app', 'xslt', 'luther.xsl'))
-  return render_to_response('overview.html', {'body' : body.serializeDocument()}, context_instance=RequestContext(request))
+  thumbs = os.listdir(os.path.join(settings.BASE_DIR, 'static', 'images', 'thumbs'))
+  thumbs = thumbs[::-1]
+  thumb_dict = {}
+  for thumb in thumbs:
+    thumb_dict[thumbs.index(thumb)] = (thumb, ('luther_' + thumb.rstrip('_thumb.gif') + '.jpg'))    
+  return render_to_response('images.html', {'thumb_dict':thumb_dict}, context_instance=RequestContext(request))
+
+def page(request, filename):
+  page = filename
+  all_pages = os.listdir(os.path.join(settings.BASE_DIR, 'static', 'images', 'pages'))
+  all_pages = all_pages[::-1]
+  if page in all_pages:
+    position = all_pages.index(page)
+    try:
+      prev = all_pages[position-1]
+    except:
+      prev = None
+    try:
+      next = all_pages[position+1]
+    except:
+      next = None
+  return render_to_response('page.html', {'page' : page, 'prev': prev, 'next': next, 'position': position}, context_instance=RequestContext(request))
 
 def works(request):
   file = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'xml', 'bibliography.xml'))

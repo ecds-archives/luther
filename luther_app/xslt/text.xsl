@@ -13,7 +13,7 @@
 
 
 <!--path for images-->
-<xsl:variable name="imgserver">/static/images/luther_jpgs/</xsl:variable>
+<xsl:variable name="imgserver">/static/images/pages/</xsl:variable>
 
 <xsl:template match="/"> 
   <xsl:element name="div">
@@ -24,7 +24,7 @@
 
 <xsl:template match="tei:pb">
   <xsl:element name="div">
-    <xsl:attribute name="class">break</xsl:attribute>
+    <xsl:attribute name="class">page_img</xsl:attribute>
     <xsl:element name="img">
       <xsl:attribute name="src">
 	<xsl:value-of select="$imgserver"/><xsl:value-of select="@facs"/>
@@ -32,6 +32,7 @@
       <xsl:attribute name="alt">
 	<xsl:text>page image : </xsl:text><xsl:value-of select="@n"/>
       </xsl:attribute>
+      <xsl:attribute name="class">resize</xsl:attribute>
     </xsl:element>
   </xsl:element>
   <xsl:element name="hr">
@@ -49,16 +50,34 @@
   <xsl:apply-templates/> 
 </xsl:template>
 
+
+<!-- title page -->
+<xsl:template match="tei:div[@type='title_page']">
+  <xsl:element name="div">
+    <xsl:attribute name="class">title</xsl:attribute>
+    <xsl:apply-templates/>
+  </xsl:element>
+</xsl:template>
+
+<xsl:template match="tei:imprint">
+  <xsl:element name="p">
+    <xsl:apply-templates/>
+  </xsl:element>
+</xsl:template>
+
+
+
 <!-- display the title -->
 <xsl:template match="tei:div/tei:head">
-  <xsl:element name="h2">
+  <xsl:element name="p">
+   <xsl:attribute name="class">title</xsl:attribute>
    <xsl:apply-templates />
   </xsl:element>
 </xsl:template>
 
 
 <xsl:template match="tei:p">
-  <xsl:element name="br">
+  <xsl:element name="p">
     <xsl:apply-templates /> 
   </xsl:element>
 </xsl:template>
