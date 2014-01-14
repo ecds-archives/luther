@@ -12,7 +12,7 @@
 {% else %}
 <a href={% url "images" %}><<<</a>
 {% endif %}
-Text             
+<a href="{% url 'text' %}#{{filename}}">Text</a>             
 {% if position != 24 %}
 <a href={% url "page" next %}>>>></a>
 {% else %}

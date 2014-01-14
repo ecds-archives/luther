@@ -25,6 +25,8 @@
 <xsl:template match="tei:pb">
   <xsl:element name="div">
     <xsl:attribute name="class">page_img</xsl:attribute>
+    <xsl:element name="a">
+      <xsl:attribute name="href"><xsl:value-of select="@facs"/></xsl:attribute>
     <xsl:element name="img">
       <xsl:attribute name="src">
 	<xsl:value-of select="$imgserver"/><xsl:value-of select="@facs"/>
@@ -34,13 +36,16 @@
       </xsl:attribute>
       <xsl:attribute name="class">resize</xsl:attribute>
     </xsl:element>
-  </xsl:element>
+    </xsl:element>
+    </xsl:element>
   <xsl:element name="hr">
     <xsl:attribute name="class">pagebreak</xsl:attribute>
-  </xsl:element>    
-  <xsl:apply-templates/>
+  </xsl:element>   
+  <xsl:element name="a">
+    <xsl:attribute name="name"><xsl:value-of select="@facs"/></xsl:attribute>
+  </xsl:element> 
+ <xsl:apply-templates/>
 </xsl:template>
-
 
 <xsl:template match="tei:teiHeader"/>
 

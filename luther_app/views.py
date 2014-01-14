@@ -61,7 +61,7 @@ def page(request, filename):
       next = all_pages[position+1]
     except:
       next = None
-  return render_to_response('page.html', {'page' : page, 'prev': prev, 'next': next, 'position': position}, context_instance=RequestContext(request))
+  return render_to_response('page.html', {'page' : page, 'prev': prev, 'next': next, 'position': position, 'filename':filename}, context_instance=RequestContext(request))
 
 def works(request):
   file = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'xml', 'bibliography.xml'))
