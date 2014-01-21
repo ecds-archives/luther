@@ -67,3 +67,12 @@ def works(request):
   file = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'xml', 'bibliography.xml'))
   body = file.xsl_transform(filename=os.path.join(settings.BASE_DIR, '..', 'luther_app', 'xslt', 'luther.xsl'))
   return render_to_response('works.html', {'body' : body.serializeDocument()}, context_instance=RequestContext(request))
+
+def xml(request):
+  "Display xml of a single issue."
+  try:
+    doc = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'xml', 'luther_text.xml'))
+  except:
+    raise Http404
+  tei_xml = doc.serializeDocument(pretty=True)
+  return HttpResponse(tei_xml, mimetype='application/xml')  
