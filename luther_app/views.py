@@ -36,7 +36,6 @@ def intro(request):
 def text(request):
   file = xmlmap.load_xmlobject_from_file(filename=os.path.join(settings.BASE_DIR, 'static', 'xml', 'luther_text.xml'))
   body = file.xsl_transform(filename=os.path.join(settings.BASE_DIR, '..', 'luther_app', 'xslt', 'text.xsl'))
-  
   return render_to_response('text.html', {'body' : body.serializeDocument()}, context_instance=RequestContext(request))
  
 def images(request):

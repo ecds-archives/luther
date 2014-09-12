@@ -39,7 +39,7 @@ div.page_img
     {
     float:right;
     text-align:right;
-    margin:25px;
+    margin:15px;
     clear:right;
     }
     
@@ -83,7 +83,7 @@ li.sermon { list-style-type: circle;
 /* styles for the header and footer */
 div.header, div.footer { 
     text-align: center; 
-    width: 800px;  /*width: 665px;*/ margin: auto; 
+    /*width: 665px;*/ margin: auto; 
 }
 
 div.header a { 
@@ -101,10 +101,10 @@ div.header p {margin: 0px; }
 
 div.header p.links,div.footer p.links { 
     border-top: 2px solid #000033; 
-    margin: 5px; 
+    margin: 0px; 
     text-align: center; 
     vertical-align: middle; 
-    font-size: 90%; 
+    font-size: 100%; 
     color: #000033;
 }
 
