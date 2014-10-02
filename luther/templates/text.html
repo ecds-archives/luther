@@ -4,6 +4,10 @@
 
 {% block content %}
 
+<div class="downloads">
+  <p><b><a href={% url "send_file" %}>Download Sermon as Plain Text</a></b></p>
+</div>
+
 {% if body %}
   {{body|safe}}
 {% else %}

@@ -1,6 +1,9 @@
 import os
 from urllib import urlencode
 import logging
+import tempfile, zipfile
+from django.core.servers.basehttp import FileWrapper
+import mimetypes
 
 from django.conf import settings
 from django.shortcuts import render, render_to_response
@@ -75,3 +78,13 @@ def xml(request):
     raise Http404
   tei_xml = doc.serializeDocument(pretty=True)
   return HttpResponse(tei_xml, mimetype='application/xml')  
+
+def send_file(request):
+    filename  = os.path.join(settings.BASE_DIR, 'static', 'txt', 'luther_sermon.txt' )
+    download_name = 'luther_sermon.txt'
+    wrapper      = FileWrapper(open(filename))
+    content_type = mimetypes.guess_type(filename)[0]
+    response     = HttpResponse(wrapper,content_type=content_type)
+    response['Content-Length']      = os.path.getsize(filename)    
+    response['Content-Disposition'] = "attachment; filename=%s"%download_name
+    return response
